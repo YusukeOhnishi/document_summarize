@@ -6,7 +6,7 @@ Clone：
 
 ```bash
 git clone 
-cd ./Transformer_for_StockPrediction
+cd ./document_summarize
 ```
 
 Requires OpenAI API Key for use.
