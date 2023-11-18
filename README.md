@@ -5,7 +5,7 @@ The created application can be used by starting it on a Docker container or by i
 Clone：
 
 ```bash
-git clone 
+git clone https://github.com/YusukeOhnishi/document_summarize.git
 cd ./document_summarize
 ```
 
