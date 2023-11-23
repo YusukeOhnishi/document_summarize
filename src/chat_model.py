@@ -1,10 +1,11 @@
+import os
 from openai import OpenAI
 import tiktoken
 
 
-class chat_model():
-    def __init__(self, openai_api_key, model_name):
-        self.client = OpenAI(api_key=openai_api_key)
+class ChatModel():
+    def __init__(self, model_name):
+        self.client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
         self.model_name = model_name
 
     def get_chat_message(self, message):

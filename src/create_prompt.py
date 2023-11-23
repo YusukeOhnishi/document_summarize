@@ -1,5 +1,6 @@
-def create_summary_prompt(text, language):
-    return f"""
+class CreatePrompt:
+    def create_summary_prompt(text, language):
+        return f"""
 you are a scientist Please output a paper summary based on the following constraints and the input text.
 
 %Constraints:
@@ -19,9 +20,8 @@ you are a scientist Please output a paper summary based on the following constra
 {text}
 """
 
-
-def create_part_summary_prompt(text):
-    return f"""
+    def create_part_summary_prompt(text):
+        return f"""
 you are a scientist Please output a paper summary based on the following constraints and the input text.
 
 %%Constraints:

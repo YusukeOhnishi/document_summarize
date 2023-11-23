@@ -28,7 +28,7 @@ docker build -t document_summarize .
 docker run -p 8501:8501 document_summarize
 ```
 
-After executing the above command, access ```http:localhost:8501.```
+After executing the above command, access ```http:localhost:8501```.
 
 ### Local
 Execute the following only when running in a virtual environment.
@@ -66,7 +66,7 @@ Currently, the following models are available.
 - gpt-4-32k
 - gpt-4-1106-preview
 
-<img src="https://i.imgur.com/4JnuTRE.png" width=600>
+<img src="https://i.imgur.com/xeodDhU.png" width=300>
 
 ### Set output language
 Specify in which language the summary results will be output (Default is English).
@@ -75,26 +75,33 @@ Currently, the following languages can be specified.
 - English
 - Japanese
 
-<img src="https://i.imgur.com/EBr6p78.png" width=600>
+<img src="https://i.imgur.com/uXAYxzC.png" width=300>
 
-### Upload file
-Upload the file.
-You can upload by dragging and dropping, but you can also specify the file directly from Explorer by clicking. Currently, the supported file formats are as follows.
+### Select file
+Select the document you want to summarize.
+You can select documents located locally or on the web.
+The supported file formats are as follows.
 
 - pdf
 
-<img src="https://i.imgur.com/IZNuLXq.png" width=600>
+If you select a local file, please upload the file with URL Load Mode turned off.
+<img src="https://i.imgur.com/rHLmb2P.png" width=400>
 
-When the file is successfully uploaded, the number of tokens for the input file and the cost of the input prompt in the gpt model will be displayed in the sidebar.
+If you want to select a file on the web, please enter the URL in the text box with URL Load Mode turned on.
+<img src="https://i.imgur.com/KugsDKQ.png" width=400>
 
-<img src="https://i.imgur.com/YZxeAtU.png" width=600>
+When the file is successfully loaded, the number of tokens for the input file and the cost of the input prompt in the gpt model will be displayed in the sidebar.
+
+<img src="https://i.imgur.com/KSNnL54.png" width=130>
 
 ### Click Summary button
 Click the summary button.
 
-<img src="https://i.imgur.com/oEUhx2X.png" width=600>
+<img src="https://i.imgur.com/ljPs8tc.png" width=70>
 
 Once the summarization process is complete, the summary results will be output.
 Also, the number of tokens used to output the results and the OpenAI API cost are output in the sidebar.
 
-<img src="https://i.imgur.com/0Vr2EGA.png" width=600>
+<img src="https://i.imgur.com/LfgGNqA.png" width=130>
+
+<img src="https://i.imgur.com/dHGCfmx.png" width=400>
