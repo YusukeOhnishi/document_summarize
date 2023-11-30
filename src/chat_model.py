@@ -1,5 +1,5 @@
 import os
-from openai import OpenAI
+from openai import OpenAI, AzureOpenAI
 import tiktoken
 
 
@@ -12,10 +12,11 @@ class ChatModel():
         api_version = os.getenv('API_VERSION')
 
         if api_type == 'azure':
-            self.client = OpenAI(
-                api_endpoint=endpoint,
+            self.client = AzureOpenAI(
+                azure_endpoint =endpoint,
                 api_key=api_key,
-                api_version=api_version
+                api_version=api_version,
+                azure_deployment=model_name
             )
         elif api_type == 'openai':
             self.client = OpenAI(
